@@ -42,3 +42,24 @@ ok, this is awesome. this is the hexdump of the beginning of the first bitcoin:
 00000110 ŠLp+kñ._¬....
 ```
 # ch. 2 analyzing the whitepaper
+## brief history and overview of bitcoin
+just basic outline of bitcoin
+## the whitepaper pulled apart
+__important terms:__
+- __hash__ - we know
+- __node__ - in the context of bitcoin, it is a program that stores either a complete or partial part of the timechain, and takes care of validation, propagation and mining
+- __private and public keys__ - quote:
+    In the context of encryption, the public key can only encrypt data, but not decrypt. In the context of digital signatures, the public key can only verify signatures, but cannot sign. The private key can do both and the public key is typically calculated from it. Asymmetric cryptography is typically slower than symmetric, and so it is commonly used to securely exchange a symmetric key when you want to establish encrypted communication with another party.
+- __symmetric encryption__ - one key that handles encryption and decryption
+- __asymmetric encryption__ - there is a private key with more capabilities than the public key
+### introduction
+going over the commercial applications of bitcoin - irreversible transactions, decentralized - eliminating the need for third parties to verify and mediate financial transactions.
+
+cool quote:
+"The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes." - meaning that you could take over the blockchain if you got a majority of malicious nodes
+### transactions
+we define an __electronic coin__ as a chain of digital signatures
+    each owner transfers the coin to the next by signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin
+
+to prevent _double-spending_, we need a public log of all transactions that the majority of nodes agree on to see if the coin has been spent before
+### timestamp server
