@@ -63,3 +63,14 @@ we define an __electronic coin__ as a chain of digital signatures
 
 to prevent _double-spending_, we need a public log of all transactions that the majority of nodes agree on to see if the coin has been spent before
 ### timestamp server
+alright so the timestamp server just takes a block of items and hashes it
+(probably with the time), then "widely publishes" it.
+### proof-of-work
+Hashcash by Adam Back was an idea for limiting the ability of email spammers - forcing them to compute a hash function every time they want to send an email.
+
+bitcoin does basically the same thing but harder - increment a 'nonce' until the number of zeros at the start of the hash is satisfied
+
+ensures that the 'majority' which decides the correct chain to use (?) is determined by cpu count rather than ip addr count
+
+the proof of work difficulty is dynamically adjusted so that the blocks take about 10 minutes to compute on average
+### network
