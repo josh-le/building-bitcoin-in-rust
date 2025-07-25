@@ -74,3 +74,13 @@ ensures that the 'majority' which decides the correct chain to use (?) is determ
 
 the proof of work difficulty is dynamically adjusted so that the blocks take about 10 minutes to compute on average
 ### network
+__steps to run the network:__
+1. new transactions broadcast to all nodes
+2. each node collects new transactions into a block
+3. each node works on finding a difficult proof of work for its block
+4. when a node finds a proof of work, it broadcasts the block to all nodes
+5. nodes accept the block only if all transactions in it are valid and not already spent
+    a. nodes express their acceptance of the block by working on creating the next block in the chain using the hash they received as the previous hash
+### incentive
+there is a diminishing reward for mining bitcoin as the chain gets longer and longer, there is a formula here in the paper
+    this is where the 21 million number comes from
