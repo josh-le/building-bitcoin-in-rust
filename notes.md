@@ -84,3 +84,9 @@ __steps to run the network:__
 ### incentive
 there is a diminishing reward for mining bitcoin as the chain gets longer and longer, there is a formula here in the paper
     this is where the 21 million number comes from
+### reclaiming disk space
+don't need to worry about this too much, we did learn about a cool data structure tho, the [[merkle tree]] - binary tree with each leaf node being a hash of a piece of information and the parents are hashes of both their children
+### simplified payment verification
+you don't need to run a full network node to verify payments
+### combining and splitting value
+the takeaway for us from this part is that our transactions have to be designed in such a way that they can i/o varying numbers of inputs and outputs
